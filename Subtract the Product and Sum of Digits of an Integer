@@ -1,0 +1,25 @@
+class Solution {
+    public int subtractProductAndSum(int n) {
+       int sum=0;
+        int product = 1;
+         
+        int curr = n;
+        while(curr>0){
+            int now=curr%10;
+            System.out.println(curr%10+"this is curr %10");
+            sum +=now;
+            product *=now;
+            System.out.println(curr/10+"this is curr /10");
+            curr = curr/10;
+            
+        }
+        return product - sum;
+    }
+}
+Your input
+234
+ 
+Output
+15
+Expected
+15
