@@ -18,6 +18,13 @@ class Solution {
 }
 Your input
 234
+stdout
+4this is curr %10
+23this is curr /10
+3this is curr %10
+2this is curr /10
+2this is curr %10
+0this is curr /10
  
 Output
 15
