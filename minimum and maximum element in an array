@@ -15,6 +15,9 @@ class Compute
     }
     
 }
+Input:
+N = 6
+A[] = {3, 2, 1, 56, 10000, 167}
 
 
  output:Output:
