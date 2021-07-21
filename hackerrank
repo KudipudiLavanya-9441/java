@@ -1,0 +1,51 @@
+//Complete this code or write your own from scratch
+import java.util.*;
+import java.io.*;
+
+class Solution{
+   public static void main(String []argh)
+   {
+      Scanner in = new Scanner(System.in);
+      int n=in.nextInt();
+      in.nextLine();
+       Map<String,Integer> Directory= new HashMap<String,Integer>();
+      for(int i=0;i<n;i++)
+      {
+         String name=in.nextLine();
+         int phone=in.nextInt();
+          Directory.put(name,phone);
+         in.nextLine();
+      }
+      while(in.hasNext())
+      {
+          try{
+         String s=in.nextLine();
+          String res=Integer.toString(Directory.get(s));
+                if(res!=null){
+              System.out.println(s+"="+Directory.get(s));
+          }
+          else{
+               System.out.println("Not found");
+          }
+          }
+          catch(NullPointerException e){
+              System.out.println("Not found");
+          }
+        
+      }
+   }
+}
+ sample output:
+
+3
+sam 99912222
+tom 11122222
+harry 12299933
+sam
+edward
+harry
+ Output:
+
+sam=99912222
+Not found
+harry=12299933
